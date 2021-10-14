@@ -12,3 +12,22 @@ class QuickstartUser(HttpUser):
         for item_id in range(10):
             self.client.get(f"/calc/sum?m={item_id}&n={42}", name="/calc/sum")
             time.sleep(1)
+
+    @task(3) # this task is 3 times likelier than the previous!
+    def view_item(self):
+        for item_id in range(10):
+            self.client.get(f"/calc/sub?m={item_id}&n={42}", name="/calc/sub")
+            time.sleep(1)
+    
+    @task(3) # this task is 3 times likelier than the previous!
+    def view_item(self):
+        for item_id in range(10):
+            self.client.get(f"/calc/mul?m={item_id}&n={42}", name="/calc/mul")
+            time.sleep(1)
+
+    @task(3) # this task is 3 times likelier than the previous!
+    def view_item(self):
+        for item_id in range(10):
+            self.client.get(f"/calc/div?m={item_id}&n={42}", name="/calc/div")
+            time.sleep(1)
+
