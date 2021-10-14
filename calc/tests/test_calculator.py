@@ -4,6 +4,7 @@ import unittest
 # TODO: Extend these unit tests for the calculator module!
 
 class TestAdd(unittest.TestCase):
+    # sum
     def test_add_integers_positive(self):
         result = c.sum(1, 2)
         self.assertEqual(result, 3)
@@ -20,6 +21,7 @@ class TestAdd(unittest.TestCase):
         result = c.sum(-1, 2)
         self.assertEqual(result, 1)
 
+    # division
     def test_divide_integers_positive(self):
         result = c.divide(6, 3)
         self.assertEqual(result, 2)
@@ -59,15 +61,27 @@ class TestAdd(unittest.TestCase):
     def test_divide_by_zero(self):
         self.assertRaises(ZeroDivisionError, c.divide, 6, 0)
 
-    #multiplication
+    # multiplication
     def test_multiplication_positive(self):
         result = c.multiply(4, 5)
         self.assertEqual(result, 20)
 
     def test_multiplication_negative(self):
+        result = c.multiply(-4, -5)
+        self.assertEqual(result, 20)
+        
+    def test_multiplication_pos_neg(self):
+        result = c.multiply(4, -5)
+        self.assertEqual(result, -20)
+
+    def test_multiplication_neg_pos(self):
         result = c.multiply(-4, 5)
         self.assertEqual(result, -20)
-    
+
+    def test_multiplication_zero(self):
+        result = c.multiply(0, 2)
+        self.assertEqual(result, 0)
+
     # subtraction
     def test_sub_integers_positive(self):
         result = c.subtract(1, 2)
