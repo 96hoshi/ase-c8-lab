@@ -20,12 +20,12 @@ class TestCalc(unittest.TestCase):
         tested_app = app.test_client()
         reply = tested_app.get("/calc/div?m=3&n=0").get_json()
         self.assertEqual(reply["result"], "DivisionByZeroError")
-    
+
     def test_div2(self):
         tested_app = app.test_client()
         reply = tested_app.get("/calc/div?m=3&n=1").get_json()
         self.assertEqual(reply["result"], "3")
-    
+
     def multiplication_positive(self):
          tested_app = app.test_client()
          reply = tested_app.get("/calc/mul?m=4&n=5").get_json()
