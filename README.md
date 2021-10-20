@@ -1,6 +1,6 @@
 # ASE Calc Microservice
 
-[![Coverage Status](https://coveralls.io/repos/github/teto1992/calc2021/badge.svg?branch=main)](https://coveralls.io/github/teto1992/calc2021?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/96hoshi/ase-c8-lab/badge.svg?branch=master)](https://coveralls.io/github/96hoshi/ase-c8-lab?branch=master)
 
 ### Setup the environment
 
