@@ -1,5 +1,6 @@
 # ASE Calc Microservice
 
+[![Build Status](https://app.travis-ci.com/96hoshi/ase-c8-lab.svg?branch=master)](https://app.travis-ci.com/96hoshi/ase-c8-lab)
 [![Coverage Status](https://coveralls.io/repos/github/96hoshi/ase-c8-lab/badge.svg?branch=master)](https://coveralls.io/github/96hoshi/ase-c8-lab?branch=master)
 
 ### Setup the environment
